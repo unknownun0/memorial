@@ -53,8 +53,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-          <div>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+          <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-gold-50 flex items-center justify-center flex-shrink-0">
@@ -65,7 +65,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Visit Us</h4>
-                  <p className="text-gray-500 text-sm mt-1">123 Serenity Drive, Peaceful Valley, Manila</p>
+                  <p className="text-gray-500 text-sm mt-1">Bayani Road, Fort Bonifacio, Taguig City 1630, Philippines</p>
+                  <p className="text-gray-400 text-xs mt-0.5">Open daily: 8:00 AM - 5:00 PM (Park hours)</p>
                 </div>
               </div>
 
@@ -78,6 +79,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900">Call Us</h4>
                   <p className="text-gray-500 text-sm mt-1">+63 (2) 1234 5678</p>
+                  <p className="text-gray-400 text-xs mt-0.5">Viber/WhatsApp: +63 917 531 5501</p>
                 </div>
               </div>
 
@@ -102,8 +104,22 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900">Office Hours</h4>
                   <p className="text-gray-500 text-sm mt-1">Mon - Sat: 8:00 AM - 6:00 PM</p>
+                  <p className="text-gray-400 text-xs mt-0.5">Sunday by appointment only</p>
                 </div>
               </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-[250px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7000000000004!2d121.0456!3d14.5321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8a123456789%3A0x123456789abcdef!2sThe+Heritage+Park!5e0!3m2!1sen!2sph!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Heritage Park Location"
+              />
             </div>
           </div>
 

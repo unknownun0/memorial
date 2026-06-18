@@ -39,30 +39,35 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-12">
           {galleryItems.map((item, i) => (
-            <div
-              key={i}
-              className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500"
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
+            <div key={i}>
+              <hr className="border-t border-gray-200 mb-8" />
+              <div className="flex flex-col md:flex-row gap-8 items-stretch">
+                <div className="md:w-1/2 aspect-[4/3] md:aspect-auto overflow-hidden rounded-xl">
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="hidden md:block w-px bg-gray-200" />
+                <div className="md:w-1/2 flex flex-col justify-center py-4">
+                  <span className="text-gold-600 text-xs font-bold tracking-widest uppercase mb-2">
+                    Featured
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-serif mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                <h3 className="text-white text-xl font-bold font-serif mb-2">{item.title}</h3>
-                <p className="text-white/80 text-sm">{item.description}</p>
-              </div>
-              <div className="absolute top-4 left-4">
-                <span className="bg-white/90 text-gray-900 text-xs font-bold px-3 py-1 rounded-full">
-                  Featured
-                </span>
-              </div>
+              {i === galleryItems.length - 1 && (
+                <hr className="border-t border-gray-200 mt-8" />
+              )}
             </div>
           ))}
         </div>

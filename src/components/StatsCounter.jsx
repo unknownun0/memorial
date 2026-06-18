@@ -9,25 +9,25 @@ const stats = [
   { label: 'Plots Booked', value: 10000, suffix: '+' },
 ];
 
-function Counter({ end, suffix, label, visible }) {
+function Counter({ value, suffix, label, visible }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!visible) return;
     let start = 0;
     const duration = 2000;
-    const step = Math.ceil(end / (duration / 16));
+    const step = Math.ceil(value / (duration / 16));
     const timer = setInterval(() => {
       start += step;
-      if (start >= end) {
-        setCount(end);
+      if (start >= value) {
+        setCount(value);
         clearInterval(timer);
       } else {
         setCount(start);
       }
     }, 16);
     return () => clearInterval(timer);
-  }, [end, visible]);
+  }, [value, visible]);
 
   return (
     <div className="text-center p-6">

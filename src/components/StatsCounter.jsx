@@ -31,7 +31,7 @@ function Counter({ value, suffix, label, visible }) {
 
   return (
     <div className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-bold font-serif text-white mb-2 drop-shadow-lg">
+      <div className="text-4xl md:text-5xl font-bold font-serif text-yellow-400 mb-2 drop-shadow-lg">
         {count}{suffix}
       </div>
       <div className="text-white/80 font-medium">{label}</div>

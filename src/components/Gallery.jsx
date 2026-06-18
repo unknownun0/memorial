@@ -39,38 +39,40 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="space-y-12">
-          {galleryItems.map((item, i) => (
-            <div key={i}>
-              <hr className="border-t border-gray-200 mb-8" />
-              <div className="flex flex-col md:flex-row gap-8 items-stretch">
-                <div className="md:w-1/2 aspect-[4/3] md:aspect-auto overflow-hidden rounded-xl">
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="hidden md:block w-px bg-gray-200" />
-                <div className="md:w-1/2 flex flex-col justify-center py-4">
-                  <span className="text-gold-600 text-xs font-bold tracking-widest uppercase mb-2">
-                    Featured
+        <hr className="border-t border-gray-200 mb-8" />
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+          <div className="md:w-1/2">
+            <div className="aspect-[4/3] overflow-hidden rounded-xl">
+              <img
+                src={galleryItems[0].src}
+                alt={galleryItems[0].title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="hidden md:block w-px bg-gray-200" />
+          <div className="md:w-1/2 space-y-6">
+            {galleryItems.map((item, i) => (
+              <div key={i}>
+                {i < 2 && (
+                  <span className="text-gold-600 text-xs font-bold tracking-widest uppercase">
+                    - Featured
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 font-serif mb-4">
+                )}
+                <div className="mt-1">
+                  <h3 className="text-lg font-bold text-gray-900 font-serif">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed mt-1">
                     {item.description}
                   </p>
                 </div>
+                {i < galleryItems.length - 1 && <hr className="border-t border-gray-100 mt-4" />}
               </div>
-              {i === galleryItems.length - 1 && (
-                <hr className="border-t border-gray-200 mt-8" />
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+        <hr className="border-t border-gray-200 mt-8" />
       </div>
     </section>
   );

@@ -53,7 +53,7 @@ export default function StatsCounter() {
   }, []);
 
   return (
-    <section ref={ref} className="py-16 gold-gradient-bg">
+    <section ref={ref} className="py-16 bg-gray-900">
       <div className="container-custom">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (

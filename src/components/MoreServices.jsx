@@ -1,6 +1,6 @@
 const services = [
   {
-    src: 'https://images.unsplash.com/photo-1586169364769-3e4b6b7f5c5d?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/736x/f6/99/10/f69910455dc9f30db50d3bd8862bcf56.jpg',
     title: 'Memorial Lots',
     description: 'Premium burial plots in serene locations with perpetual care included.',
   },

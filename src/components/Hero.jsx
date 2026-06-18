@@ -1,9 +1,9 @@
 'use client';
 
 const heroImages = [
-  'https://images.unsplash.com/photo-1505322747491-0b7a7b3efb3b?auto=format&fit=crop&w=1920&q=80',
-  'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1920&q=80',
-  'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=1920&q=80',
+  'https://i.pinimg.com/1200x/41/3c/69/413c69170ded113b8453e70760939162.jpg',
+  'https://i.pinimg.com/1200x/4b/82/11/4b8211ba588bb8afcc861c3daf0f32ad.jpg',
+  'https://i.pinimg.com/1200x/4b/82/11/4b8211ba588bb8afcc861c3daf0f32ad.jpg',
 ];
 
 export default function Hero() {

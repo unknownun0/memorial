@@ -31,10 +31,10 @@ function Counter({ value, suffix, label, visible }) {
 
   return (
     <div className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-bold font-serif text-gold-600 mb-2">
+      <div className="text-4xl md:text-5xl font-bold font-serif text-white mb-2 drop-shadow-lg">
         {count}{suffix}
       </div>
-      <div className="text-gray-300 font-medium">{label}</div>
+      <div className="text-white/80 font-medium">{label}</div>
     </div>
   );
 }

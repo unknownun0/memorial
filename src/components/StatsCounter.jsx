@@ -31,7 +31,7 @@ function Counter({ value, suffix, label, visible }) {
 
   return (
     <div className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-bold font-serif text-yellow-400 mb-2 drop-shadow-lg">
+      <div className="text-4xl md:text-5xl font-bold font-serif text-white mb-2 drop-shadow-lg">
         {count}{suffix}
       </div>
       <div className="text-white/80 font-medium">{label}</div>
@@ -53,7 +53,7 @@ export default function StatsCounter() {
   }, []);
 
   return (
-    <section ref={ref} className="py-16 bg-gray-900">
+    <section ref={ref} className="py-16 bg-yellow-500">
       <div className="container-custom">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (

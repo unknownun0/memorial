@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --gold: #C9A13B;
+  --gold-light: #F5E6C8;
+  --gold-dark: #A8852E;
+  --cream: #FFF8F0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
+
+@keyframes crossfade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  33.33% { opacity: 0; }
+  58.33% { opacity: 0; }
+  66.66% { opacity: 0; }
+  91.66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.hero-slide {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+}
+
+.hero-slide:nth-child(1) { animation: crossfade 15s infinite; }
+.hero-slide:nth-child(2) { animation: crossfade 15s infinite 5s; }
+.hero-slide:nth-child(3) { animation: crossfade 15s infinite 10s; }
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.counter-animate {
+  animation: countUp 0.6s ease-out forwards;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #C9A13B, #F5E6C8, #C9A13B);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #C9A13B, #A8852E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom { padding: 0 2rem; }
+}

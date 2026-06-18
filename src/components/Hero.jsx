@@ -1,0 +1,63 @@
+'use client';
+
+const heroImages = [
+  'https://images.unsplash.com/photo-1505322747491-0b7a7b3efb3b?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1920&q=80',
+  'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=1920&q=80',
+];
+
+export default function Hero() {
+  return (
+    <section id="home" className="relative h-screen overflow-hidden">
+      {heroImages.map((img, i) => (
+        <div
+          key={i}
+          className="hero-slide"
+          style={{ backgroundImage: `url(${img})` }}
+        />
+      ))}
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="text-center px-4 max-w-4xl">
+          <div className="inline-block mb-6 px-4 py-1.5 border border-gold-400/40 rounded-full">
+            <span className="text-gold-300 text-sm tracking-widest uppercase">Est. 2024</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            Honoring Lives,
+            <br />
+            <span className="gold-text-gradient">Preserving Memories</span>
+          </h1>
+
+          <p className="text-lg sm:text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Premium memorial lands and compassionate service plans designed with dignity,
+            respect, and timeless elegance.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#services"
+              className="px-8 py-3.5 bg-gold-600 text-white font-semibold rounded-full hover:bg-gold-700 transition-all hover:shadow-xl hover:shadow-gold-600/30 text-sm sm:text-base"
+            >
+              Explore Our Plans
+            </a>
+            <a
+              href="#contact"
+              className="px-8 py-3.5 border-2 border-white/40 text-white font-semibold rounded-full hover:bg-white/10 transition-all text-sm sm:text-base"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg className="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </section>
+  );
+}

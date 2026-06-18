@@ -11,20 +11,21 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Reviews from '@/components/Reviews';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Reveal from '@/components/Reveal';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <About />
-      <Services />
-      <StatsCounter />
-      <Gallery />
-      <MoreServices />
-      <WhyChooseUs />
-      <Reviews />
-      <Contact />
+      <Reveal><About /></Reveal>
+      <Reveal delay={100}><Services /></Reveal>
+      <Reveal delay={100}><StatsCounter /></Reveal>
+      <Reveal delay={100}><Gallery /></Reveal>
+      <Reveal delay={100}><MoreServices /></Reveal>
+      <Reveal delay={100}><WhyChooseUs /></Reveal>
+      <Reveal delay={100}><Reviews /></Reveal>
+      <Reveal delay={100}><Contact /></Reveal>
       <Footer />
     </main>
   );

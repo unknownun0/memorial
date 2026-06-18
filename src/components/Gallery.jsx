@@ -6,52 +6,52 @@ const categories = ['All', 'Memorial Lots', 'Columbary', 'Chapels', 'Park Amenit
 
 const galleryItems = [
   {
-    src: 'https://i.pinimg.com/736x/7c/d9/7b/7cd97b7797b9c5c9756925c7089cd53f.jpg',
+    src: 'https://i.pinimg.com/736x/8b/2c/e7/8b2ce705d80e3690fa93cf58eba2b945.jpg',
     title: 'Serenity Memorial Garden',
     description: 'A tranquil landscape designed for quiet reflection and lasting peace.',
     category: 'Memorial Lots',
   },
   {
-    src: 'https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/736x/85/86/99/85869909226e41cbeb57370703da5964.jpg',
     title: 'Heritage Oak Grove',
     description: 'Nestled beneath century-old oak trees offering natural shade and timeless beauty.',
     category: 'Memorial Lots',
   },
   {
-    src: 'https://images.unsplash.com/photo-1440581571452-82ccc2c0e7d6?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/236x/64/67/05/6467059ab1f5c65eff14161be404a86d.jpg',
     title: 'Sunset Meadow',
     description: 'Golden hour views across gently rolling hills.',
-    category: 'Park Amenities',
+    category: 'Memorial Lots',
   },
   {
-    src: 'https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80',
-    title: 'Lakeview Memorial Park',
-    description: 'Serene waterfront memorial sites with panoramic lake views.',
-    category: 'Park Amenities',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1468283214096-e8e6f5e6f4b8?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/736x/04/c1/d8/04c1d872ee54b6dc218663e40a24c2d4.jpg',
     title: 'Aeternum Columbary',
-    description: 'Elegant columbarium niches in a garden setting.',
+    description: 'Elegant columbarium niches in a serene garden setting.',
     category: 'Columbary',
   },
   {
-    src: 'https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/1200x/65/f2/6b/65f26b5b9729a58f78f5fd222aa27252.jpg',
     title: 'Memorial Chapel',
     description: 'Non-denominational chapel for religious ceremonies of all faiths.',
     category: 'Chapels',
   },
   {
-    src: 'https://images.unsplash.com/photo-1510797215324-95aa89f43c33?auto=format&fit=crop&w=800&q=80',
+    src: 'https://i.pinimg.com/1200x/78/10/bb/7810bbd8f51edcfc5ae49e9097b6edba.jpg',
     title: 'Pavilion Garden',
     description: 'Beautiful garden pavilion for family gatherings and events.',
     category: 'Park Amenities',
   },
   {
-    src: 'https://images.unsplash.com/photo-1586169364769-3e4b6b7f5c5d?auto=format&fit=crop&w=800&q=80',
-    title: 'Lawn Lot Section',
-    description: 'Simple yet dignified lawn lot memorialization option.',
-    category: 'Memorial Lots',
+    src: 'https://i.pinimg.com/736x/47/8f/57/478f57b3ad171660d754455d163a1cb6.jpg',
+    title: 'Tranquil Water Feature',
+    description: 'Peaceful water features that create a calming atmosphere.',
+    category: 'Park Amenities',
+  },
+  {
+    src: 'https://i.pinimg.com/736x/64/50/f8/6450f89b4f1da72af45eba3095c18d47.jpg',
+    title: 'Park Amenities',
+    description: 'Well-maintained pathways and gardens for quiet reflection.',
+    category: 'Park Amenities',
   },
 ];
 

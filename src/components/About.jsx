@@ -11,11 +11,8 @@ export default function About() {
           </h2>
           <div className="w-20 h-0.5 bg-gold-500 mx-auto mb-6" />
           <p className="text-gray-600 text-lg leading-relaxed">
-            At Memorial Ready, we understand the profound importance of creating a lasting
-            tribute for your loved ones. Our meticulously planned memorial lands offer serene
-            landscapes, thoughtfully designed to provide solace and beauty. With years of
-            dedicated service, we guide families through every step with compassion, respect,
-            and unwavering professionalism.
+            Serene memorial lands thoughtfully designed to provide solace and beauty.
+            We guide families with compassion and professionalism.
           </p>
         </div>
       </div>

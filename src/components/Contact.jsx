@@ -26,13 +26,13 @@ export default function Contact() {
       const data = await res.json();
 
       if (res.ok) {
-        setStatus({ type: 'success', text: 'Thank you! Your message has been sent. We will get back to you soon.' });
+        setStatus({ type: 'success', text: 'Thank you! We will get back to you soon.' });
         setForm({ name: '', email: '', message: '' });
       } else {
-        setStatus({ type: 'error', text: data.error || 'Something went wrong. Please try again.' });
+        setStatus({ type: 'error', text: data.error || 'Something went wrong.' });
       }
     } catch (error) {
-      setStatus({ type: 'error', text: 'Network error. Please check your connection and try again.' });
+      setStatus({ type: 'error', text: 'Network error. Please try again.' });
     } finally {
       setLoading(false);
     }
@@ -43,13 +43,13 @@ export default function Contact() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="text-gold-600 font-semibold text-sm tracking-widest uppercase">
-            Connect With Us
+            Get In Touch
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-4">
             We Are Here <span className="gold-text-gradient">For You</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Reach out to us anytime. Our compassionate team is ready to assist you.
+            Reach out to us. Our team is ready to assist you.
           </p>
         </div>
 
@@ -64,9 +64,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Visit Us</h4>
-                  <p className="text-gray-500 text-sm mt-1">Bayani Road, Fort Bonifacio, Taguig City 1630, Philippines</p>
-                  <p className="text-gray-400 text-xs mt-0.5">Open daily: 8:00 AM - 5:00 PM (Park hours)</p>
+                  <h4 className="font-semibold text-gray-900">Address</h4>
+                  <p className="text-gray-500 text-sm mt-1">Bayani Road, Fort Bonifacio, Taguig City</p>
                 </div>
               </div>
 
@@ -77,9 +76,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Call Us</h4>
+                  <h4 className="font-semibold text-gray-900">Phone</h4>
                   <p className="text-gray-500 text-sm mt-1">+63 (2) 1234 5678</p>
-                  <p className="text-gray-400 text-xs mt-0.5">Viber/WhatsApp: +63 917 531 5501</p>
                 </div>
               </div>
 
@@ -90,21 +88,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Email Us</h4>
+                  <h4 className="font-semibold text-gray-900">Email</h4>
                   <p className="text-gray-500 text-sm mt-1">hello@memorialready.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gold-50 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900">Office Hours</h4>
-                  <p className="text-gray-500 text-sm mt-1">Mon - Sat: 8:00 AM - 6:00 PM</p>
-                  <p className="text-gray-400 text-xs mt-0.5">Sunday by appointment only</p>
                 </div>
               </div>
             </div>
@@ -118,17 +103,17 @@ export default function Contact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Heritage Park Location"
+                title="Location"
               />
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-cream-50 p-8 rounded-2xl shadow-lg" style={{ backgroundColor: '#FFF8F0' }}>
-            <h3 className="text-xl font-bold font-serif text-gray-900 mb-6">Send Us a Message</h3>
+          <form onSubmit={handleSubmit} className="p-8 rounded-2xl shadow-lg border border-gray-100" style={{ backgroundColor: '#FFF8F0' }}>
+            <h3 className="text-xl font-bold font-serif text-gray-900 mb-6">Send a Message</h3>
 
             <div className="space-y-5">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">Your Name</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -137,12 +122,12 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all"
-                  placeholder="John Doe"
+                  placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">Your Email</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -151,12 +136,12 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all"
-                  placeholder="john@example.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">Your Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -165,7 +150,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:border-gold-500 focus:ring-2 focus:ring-gold-200 outline-none transition-all resize-none"
-                  placeholder="Tell us how we can help..."
+                  placeholder="How can we help?"
                 />
               </div>
 
@@ -174,15 +159,7 @@ export default function Contact() {
                 disabled={loading}
                 className="w-full py-3.5 bg-gold-600 hover:bg-gold-700 text-white font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-gold-600/30 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? (
-                  <span className="flex items-center justify-center gap-2">
-                    <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                    </svg>
-                    Sending...
-                  </span>
-                ) : 'Send Message'}
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
 
               {status.text && (

@@ -74,7 +74,7 @@ export default function Gallery() {
             Explore Our <span className="gold-text-gradient">Sacred Grounds</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Each location is carefully selected and maintained to provide a dignified resting place.
+            Carefully selected locations for a dignified resting place.
           </p>
         </div>
 

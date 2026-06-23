@@ -1,7 +1,7 @@
 const footerLinks = {
-  Services: ['Memorial Lots', 'Memorial Plans', 'Cremation Plans', 'Interment Plans', 'Columbary'],
-  Company: ['About Us', 'Our Team', 'Careers', 'Blog', 'FAQ'],
-  Support: ['Contact Us', 'Privacy Policy', 'Terms of Service', 'Sitemap'],
+  Services: ['Memorial Lots', 'Memorial Plans', 'Cremation', 'Interment', 'Columbary'],
+  Company: ['About', 'Blog', 'FAQ', 'Contact'],
+  Support: ['Privacy Policy', 'Terms of Service'],
 };
 
 export default function Footer() {
@@ -15,9 +15,7 @@ export default function Footer() {
               <span className="text-white">Ready</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
-              Honoring lives and preserving memories with dignity, respect, and timeless
-              elegance. We provide premium memorial lands and compassionate service plans
-              for families.
+              Honoring lives and preserving memories with dignity and respect.
             </p>
             <div className="flex gap-3 mb-6">
               {['facebook', 'twitter', 'instagram', 'youtube'].map((social) => (
@@ -77,7 +75,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Memorial Ready. All rights reserved.
           </p>
           <p className="text-gray-600 text-xs">
-            Est. Still updating &middot; Made with care
+            Made with care
           </p>
         </div>
       </div>

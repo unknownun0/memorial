@@ -22,7 +22,7 @@ export default function BlogPage() {
             Insights & <span className="gold-text-gradient">Guidance</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Thoughtful articles about memorial planning, pre-need arrangements, and honoring your loved ones.
+            Articles about memorial planning and honoring your loved ones.
           </p>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function BlogPage() {
             href="/#contact"
             className="inline-flex items-center gap-2 px-8 py-3 bg-gold-600 text-white font-semibold rounded-full hover:bg-gold-700 transition-all hover:shadow-lg hover:shadow-gold-600/30"
           >
-            Have Questions? Contact Us
+            Contact Us
           </Link>
         </div>
       </div>

@@ -5,35 +5,35 @@ import { useState } from 'react';
 const faqs = [
   {
     q: 'What types of memorial lots are available?',
-    a: 'We offer Lawn Lots (standard individual plots), Garden Lots (expansive family plots with premium markers), and Estate Lots (private lots with mausoleum options). Each tier includes perpetual care and transferable certificates.',
+    a: 'Lawn Lots, Garden Lots, and Estate Lots with perpetual care and transferable certificates.',
   },
   {
-    q: 'Can I pay in installment terms?',
-    a: 'Yes. We offer flexible payment terms for all our pre-need plans. You can pay in monthly installments over 5 to 10 years. Spot cash payments also receive exclusive discounts.',
+    q: 'Can I pay in installments?',
+    a: 'Yes. Flexible payment terms from 5 to 10 years. Spot cash payments receive discounts.',
   },
   {
-    q: 'What is included in a pre-need memorial plan?',
-    a: 'Our pre-need plans cover body retrieval, embalming, imported casket, wake (3-4 nights in a chapel), hearse service, processing of permits, memorial lot, and perpetual care. Higher-tier plans include premium chapels, digital tribute pages, and flower arrangements.',
+    q: 'What is included in a pre-need plan?',
+    a: 'Body retrieval, embalming, casket, wake, hearse service, permits, memorial lot, and perpetual care.',
   },
   {
-    q: 'Do you offer cremation services?',
-    a: 'Yes. We provide state-of-the-art cremation services with options for viewing wakes before cremation. Premium urns, columbary niches, and scattering garden arrangements are available.',
+    q: 'Do you offer cremation?',
+    a: 'Yes. Cremation with or without viewing, premium urns, columbary niches available.',
   },
   {
     q: 'What is perpetual care?',
-    a: 'Perpetual care is a guaranteed fund that ensures the memorial grounds, landscaping, and facilities remain beautifully maintained forever — at no additional cost to your family.',
+    a: 'A guaranteed fund that keeps the memorial grounds beautifully maintained forever at no extra cost.',
   },
   {
-    q: 'Can I visit the memorial park before purchasing?',
-    a: 'Absolutely. We encourage families to tour our memorial park. Simply schedule an appointment through our contact form or call us, and we will arrange a guided visit for you.',
+    q: 'Can I visit before purchasing?',
+    a: 'Absolutely. Schedule an appointment and we will arrange a guided tour for you.',
   },
   {
-    q: 'Is the certificate of ownership transferable?',
-    a: 'Yes. All our lot certificates are transferable. We assist with the documentation process for transfers, including Deed of Sale, notarization, and Heritage Park management processing.',
+    q: 'Is the certificate transferable?',
+    a: 'Yes. We assist with the documentation process for transfers.',
   },
   {
-    q: 'What documents are required to purchase?',
-    a: 'You will need a valid government ID, the completed application form, and proof of payment. For transfers, additional documents like the Original Certificate of Ownership and Deed of Sale are required.',
+    q: 'What documents are needed?',
+    a: 'A valid government ID, completed application form, and proof of payment.',
   },
 ];
 
@@ -53,7 +53,7 @@ export default function FAQSection() {
             Frequently Asked <span className="gold-text-gradient">Questions</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Everything you need to know about our memorial plans, lots, and services.
+            Answers to common questions about our plans and services.
           </p>
         </div>
 

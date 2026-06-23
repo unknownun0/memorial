@@ -121,7 +121,7 @@ export default function BlogPostPage() {
             <div className="bg-gold-600 rounded-2xl p-6 shadow-lg text-center">
               <h3 className="text-lg font-bold text-white mb-2 font-serif">Need Guidance?</h3>
               <p className="text-white/80 text-sm mb-4">
-                Our team is here to help you with memorial planning.
+                Our team is here to help.
               </p>
               <Link
                 href="/#contact"

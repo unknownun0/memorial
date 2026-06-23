@@ -17,7 +17,7 @@ export default function BlogSection() {
             Latest <span className="gold-text-gradient">Articles</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Insights, guidance, and resources to help you make informed decisions about memorial planning.
+            Insights and guidance for memorial planning.
           </p>
         </div>
 

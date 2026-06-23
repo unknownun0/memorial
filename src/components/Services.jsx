@@ -44,17 +44,17 @@ const plans = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-cream-50" style={{ backgroundColor: '#FFF8F0' }}>
+    <section id="services" className="section-padding" style={{ backgroundColor: '#FFF8F0' }}>
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="text-gold-600 font-semibold text-sm tracking-widest uppercase">
-            Our Service Plans
+            Our Plans
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-4">
             Choose Your <span className="gold-text-gradient">Memorial Plan</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Tailored plans to honor your loved ones with the dignity they deserve.
+            Plans designed to honor your loved ones with dignity.
           </p>
         </div>
 

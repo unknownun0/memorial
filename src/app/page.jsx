@@ -11,10 +11,11 @@ import MoreServices from '@/components/MoreServices';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Reviews from '@/components/Reviews';
 import FAQSection from '@/components/FAQSection';
+import BlogSection from '@/components/BlogSection';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Reveal from '@/components/Reveal';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import ChatWidget from '@/components/ChatWidget';
 
 export default function Home() {
   return (
@@ -30,9 +31,10 @@ export default function Home() {
       <Reveal delay={100}><WhyChooseUs /></Reveal>
       <Reveal delay={100}><Reviews /></Reveal>
       <Reveal delay={100}><FAQSection /></Reveal>
+      <Reveal delay={100}><BlogSection /></Reveal>
       <Reveal delay={100}><Contact /></Reveal>
       <Footer />
-      <WhatsAppButton />
+      <ChatWidget />
     </main>
   );
 }

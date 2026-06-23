@@ -7,6 +7,7 @@ const navLinks = [
   { href: '#services', label: 'Plans' },
   { href: '#pricing', label: 'Pricing' },
   { href: '#gallery', label: 'Gallery' },
+  { href: '/blog', label: 'Blog' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contact', label: 'Contact' },
 ];

@@ -88,3 +88,40 @@ h1, h2, h3, h4 {
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out forwards;
 }
+
+.img-protect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-wrap .img-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: transparent;
+}
+
+.img-wrap img {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}

@@ -1,4 +1,5 @@
 import './globals.css';
+import ImageProtection from '@/components/ImageProtection';
 
 export const metadata = {
   title: 'Memorial Ready - Premier Memorial Plans & Lots in Taguig',
@@ -49,7 +50,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body>{children}</body>
+      <body><ImageProtection>{children}</ImageProtection></body>
     </html>
   );
 }

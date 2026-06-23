@@ -101,12 +101,16 @@ export default function Gallery() {
               onClick={() => setLightbox(item)}
               className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden img-wrap">
+                <div className="img-overlay" onContextMenu={(e) => e.preventDefault()} />
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 img-protect"
                   loading="lazy"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                  onDragStart={(e) => e.preventDefault()}
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -138,8 +142,16 @@ export default function Gallery() {
             </svg>
           </button>
           <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img src={lightbox.src} alt={lightbox.title} className="w-full h-auto max-h-[75vh] object-contain bg-black" />
+            <div className="rounded-2xl overflow-hidden shadow-2xl img-wrap">
+              <div className="img-overlay" onContextMenu={(e) => e.preventDefault()} />
+              <img
+                src={lightbox.src}
+                alt={lightbox.title}
+                className="w-full h-auto max-h-[75vh] object-contain bg-black img-protect"
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+              />
             </div>
             <div className="text-white text-center mt-4">
               <h3 className="text-xl font-bold font-serif">{lightbox.title}</h3>
